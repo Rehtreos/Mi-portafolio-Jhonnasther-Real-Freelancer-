@@ -1,14 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Mi</title>
-    <!-- ↓ Para tener un sitio web con un buen performance el preload va a ayudar mucho-->
-    <link rel="preload" href="css/styles.css" as="style">
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jhonnasther Real - Diseñador Freelancer</title>
+  <!-- ↓ Para tener un sitio web con un buen performance el preload va a ayudar mucho-->
+  <link rel="preload" href="css/normalize.css" as="style" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="preload" href="css/styles.css" as="style" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
-    <h1>Sobre Mí</h1>
+  <!-- Es necesario estructurar toda la pagina, primero se empieza por el encabezado(header), 
+        el menu de navegacion(nav), el contenido principal(main), section o div y el pie de pagina(footer)
+    ↓ POR LO TANTO EL H1 DEBERIA IR EN EL HEADER-->
+
+  <header>
+    <h1 class="titulo">Jhonnasther Real <span>Freelancer</span></h1>
+    <!--solo se usa 1, es el mas importante-->
+  </header>
+
+  <div class="nav-bg">
+    <nav class="navegacion-principal contenedor">
+      <a href="index.html">Inicio</a>
+      <a href="sobreMi.html">Sobre Mi</a>
+      <a href="#">Proyectos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+
+
+  <main class="contenedor sombra contenedorSobreMi">
+    <h2 class="sobreMi__shadow">Sobre Mi</h2>
+
+    <div class="quienSoy">
+
+      <section class="quienSoy__demas">
+        <h3>¿Quién soy?</h3>
+        <img class="miFoto" src="img/plenito.jpg" alt="mi foto">
+        <div class="iconos">
+
+        </div>
+        <p class="p-sobreMi">
+          Soy Jhonnasther Real, un estudiante de Ingeniería de Sistemas de la Corporación Universitaria Minuto de Dios 
+          de Bogotá (UNIMINUTO). Tengo 19 años y me gustan muchas cosas como animar, diseñar paginas
+          web, editar imágenes y hacer música. También tengo conocimientos en Desarrollo Web, junto a lenguajes como 
+          HTML, CSS, JavaScript, Java, SQL entre otros.
+          
+        </p>
+      </section>
+
+    </div><!--.servicios-->
+  </main>
+
+  <footer class="footer">
+    <p>Jhonnasther Real Freelancer 2023. Todos los derechos reservados.</p>
+  </footer>
+
 </body>
+
 </html>
